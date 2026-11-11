@@ -1,8 +1,8 @@
 # Bloomline (working title)
 
-A one-stroke drawing puzzle game about bringing colour back to a gray world. Each level is a small, drained-of-colour scene full of creatures who've gone gray and gloomy. You draw one path with your finger. When you let go, your little traveller dashes along it and greets everyone on the way: a hug, a nose boop, a high five, a kiss on the forehead. Every creature you reach bursts back into colour, the colour spreads across the ground around them, and they fall in line behind you. By the end of the run, a silent gray clearing has become a bright, noisy parade.
+A path-drawing puzzle game about bringing colour back to a gray world. Each level is a small, drained-of-colour scene laid out on a grid of tiles and full of creatures who've gone gray and gloomy. You drag one path across the tiles with your finger. When you let go, your little traveller dashes along it and greets everyone on the way: a hug, a nose boop, a high five, a kiss on the forehead. Every creature you reach bursts back into colour, the colour spreads across the ground around them, and they fall in line behind you. By the end of the run, a silent gray clearing has become a bright, noisy parade.
 
-It keeps the core of [Red Line](../red-line/README.md): plan the whole run in your head, draw it once, watch it play out, retry instantly. The violence is gone. In its place is the fantasy of walking through a sad place and having everything in it come back to life and follow you.
+It keeps the core of [Red Line](../red-line/README.md): plan the whole run, draw it once, watch it play out, retry instantly. Unlike Red Line, the path snaps to a grid, so every rule is exact and the challenge is purely in the planning. The violence is gone. In its place is the fantasy of walking through a sad place and having everything in it come back to life and follow you.
 
 **Player promise:** draw one perfect path, and watch a whole world wake up behind you.
 
@@ -13,7 +13,7 @@ Title availability has not been checked. Alternatives: *Colour Me In*, *Warm Pat
 - **Cozy all the way through.** Nobody gets hurt, not even on a failed run. Failing is gentle and funny: you trip into a leaf pile, or a puppy bowls you over and licks your face.
 - **Colour and music return together.** The gray world is quiet. Every creature you cheer brings back a patch of colour **and** an instrument. A perfect run finishes as a full-colour scene with a full song.
 - **The parade is the reward.** Creatures you reach follow you. The longer your run, the bigger and sillier the parade. That's the "everyone comes to her" feeling, earned by the player's planning.
-- **Still a real puzzle.** Creature temperaments are the rules. Swapping punches for hugs must not make the game shallow; the thinking is the same as Red Line's, only the mood changes.
+- **Still a real puzzle.** Cheering everyone is required, the tile budget is tight, and creature temperaments clash with each other and with the obstacles. Swapping punches for hugs must not make the game shallow. The challenge comes from planning, never from danger or reflexes.
 
 ## Premise
 
@@ -23,12 +23,30 @@ Ochre isn't a princess or a hero. Ochre is just very, very good at cheering peop
 
 ## Core mechanics
 
-### The stroke
+### The grid
 
-- Draw one continuous path from Ochre's starting spot. Lifting your finger starts the run.
-- The path has a length budget, the **Warmth** meter. Longer levels give you more.
-- Ochre runs the path quickly (about 2-3 seconds, a little slower and bouncier than Red Line). Anyone within reach of the path gets greeted.
-- Sharp turns make Ochre slow down to a skip, which matters around creatures with timing rules.
+Every level is a small grid, usually 5×6 to 8×10 tiles. The grid isn't drawn as lines on a board. The tiles are part of the scene (moss patches, stepping stones, garden squares, floorboards), and grid lines only fade in while you're drawing.
+
+On the grid, every rule is clear-cut. Players should only ever fail because of a bad plan, never because their finger slipped.
+
+### Drawing the path
+
+- Drag from Ochre's tile, and the path snaps from tile to tile (up, down, left, right, no diagonals).
+- **Each tile can be used once.** The parade follows right behind Ochre, so stepping back onto a tile you've already used means walking into your own parade. The path won't let you draw it.
+- Dragging back along the path undoes it, for free. You can plan, scrap and redraw as long as you like.
+- Tapping the tile next to the path end also extends the path, for players who find dragging awkward.
+- The path has a tile budget, the **Warmth** meter. The budget is set tight, so there's little room for detours.
+- Lifting your finger (or pressing Go) starts the run.
+
+### The run
+
+- Ochre walks the path **one tile per beat** of the music. Creatures with timing rules also move on the beat, so everything stays predictable.
+- Whenever Ochre steps onto a tile next to a creature (not diagonally), Ochre greets it, if its temperament allows.
+- During planning, every rule is visible: gaze lines, soft sides, countdowns, tracks. The consequences only play out during the run, which keeps the "watch it unfold" moment.
+
+### Clearing a level
+
+**Every creature must be cheered.** If anyone is still gray when the path ends, the level isn't cleared, and you lose a heart. Failing stays gentle: the gray creatures sigh, Ochre shrugs, the run fades back to the planning view in a second.
 
 ### Greetings
 
@@ -36,51 +54,92 @@ The kind of greeting depends on the creature, which keeps the animations varied 
 
 When a creature is greeted:
 
-1. It **blooms**: colour returns to the creature, then splashes outward over the ground, grass and objects around it.
+1. It **blooms**: colour returns to the creature, then splashes outward over the tiles around it.
 2. It plays a short musical phrase, adding its instrument to the level's song.
 3. It **joins the parade** behind Ochre.
 
 ### Creature temperaments (the puzzle rules)
 
+Each temperament is easy on its own. Levels get hard when two of them pull in opposite directions.
+
 | Creature | Rule | Red Line equivalent |
 |---|---|---|
-| **Gloomy** | Cheers up from any greeting. The basic creature. | Goon |
-| **Shy** | Has a visible gaze cone. It must **see you coming**: approach through its gaze and it's delighted. Come from behind or the side and it gets startled and hides in its burrow for the rest of the run. | Gunman |
-| **Bouncy** | A puppy or lamb that runs at you the moment the run starts. If it reaches you before you greet it, you get bowled over (run over). Time your route so you meet it on your terms. | Dog |
-| **Big sad** | A big creature (a bear, a moose, a troll) who needs two greetings: pass by twice, or bring a gift. | Heavy |
-| **Prickly** | A hedgehog or cactus creature that can only be hugged from its soft side, or with mittens. | Shield guy |
-| **Worrier** | A goose that honks if it's still gray one second into the run. The honk startles every Shy creature into hiding. Calm it first. | Panic button guy |
-| **Sleepy** | Only wakes up if you pass by quietly (no sharp turns nearby). Wakes up grumpy otherwise. | (new) |
+| **Gloomy** | Cheers up when greeted from any side. The basic creature. | Goon |
+| **Shy** | Watches one straight line of tiles. It must **see you coming**: you can only greet it by walking toward it along that line. Step next to it from any other side first and it hides for the rest of the run. | Gunman |
+| **Bouncy** | A puppy or lamb that runs back and forth along a track, one tile per beat. Greet it from beside the track. Step onto its track at the moment it arrives and you get bowled over (the run ends in a pile of licks). | Dog |
+| **Big sad** | A big creature (a bear, a moose, a troll) that needs two greetings: be next to it at two separate moments in the path, or bring a cookie basket. | Heavy |
+| **Prickly** | A hedgehog or cactus creature with one soft side, marked with a fluffy patch. Greetings from other sides do nothing. Mittens let you greet it from anywhere. | Shield guy |
+| **Worrier** | A goose with a countdown over its head. If it's still gray when the countdown hits zero, it honks, and every Shy creature in the level hides. | Panic button guy |
+| **Sleepy** | Don't turn on any tile next to it: walking straight past is quiet, turning is noisy. Wake it noisily and it gets grumpy and refuses to be cheered. | (new) |
+
+### Obstacles
+
+Obstacles turn an open grid into a route puzzle.
+
+- **Tree stumps, rocks, bushes:** blocked tiles. The simplest and most common obstacle.
+- **Ponds and streams:** blocked, except for **stepping stones**, which can each be used once like any tile.
+- **Fallen logs:** blocked until a Big sad creature is in the parade. When Ochre walks past the log, the bear rolls it away and the tiles open up.
+- **Gray brambles:** blocked until a hedgehog is in the parade, which tunnels through when you pass.
+- **Hush fog:** gray fog over some tiles. You can't walk into fog. Cheering a creature blooms the tiles around it and clears any fog there, so the order of your greetings opens and closes routes. In later worlds, the fog drifts one tile every few beats.
+- **Gates:** open and close on a fixed beat pattern.
 
 ### Gifts (picked up along the path)
 
-Gifts replace weapons. Ochre collects them automatically by passing over them.
+Gifts sit on tiles. Ochre picks them up by walking over them.
 
-- **Flower:** thrown to cheer one creature at a distance. (The thrown pistol.)
-- **Blanket:** makes Ochre's next greeting a group hug with a wider reach. (The bat.)
-- **Mittens:** lets Ochre hug Prickly creatures from any side.
-- **Cookie basket:** counts as a gift for one Big sad creature, so it only needs one pass.
-- **Flute:** plays a lullaby forward in a cone, calming Worriers and waking Sleepy creatures gently.
+- **Flower:** thrown straight ahead to greet the first creature up to 3 tiles away. Lets you reach creatures behind obstacles. (The thrown pistol.)
+- **Blanket:** Ochre's next greeting also reaches diagonal tiles. (The bat.)
+- **Mittens:** greet Prickly creatures from any side.
+- **Cookie basket:** counts as both greetings for one Big sad creature.
+- **Flute:** plays a lullaby along the next 3 tiles ahead: calms a Worrier (stops its countdown) and lets you turn next to a Sleepy creature without waking it.
 
 ### Environment
 
-- **Paint pods:** big gray seed pods that burst into colour when Ochre runs past, splashing a wide area. (Explosive barrels.)
-- **Gates, curtains, hedges:** swing open as Ochre runs through; a creature behind a gate gets greeted on the way. (Doors.)
-- **Puddles:** splash colour along the path, but make Ochre slide a little further than drawn. Later levels use this on purpose. (Blood slicks.)
-- **Wind seeds and leaf piles:** carry Ochre a short distance or soften a fall.
-- **Gray brambles:** block the path until a hedgehog in the parade clears them (see Companions).
+- **Paint pods:** big gray seed pods. Walk next to one and it bursts, blooming a 3×3 area and clearing any fog in it. (Explosive barrels.)
+- **Puddles:** Ochre slides one extra tile in the same direction. You plan for it, and the slide tile still counts as used. (Blood slicks.)
+- **Wind seeds:** carry Ochre two tiles in a straight line, over an obstacle.
 
 ### The parade
 
-Every creature you cheer falls in line behind Ochre. During the run this is purely joyful: a growing conga line of happy animals.
+Every creature you cheer falls in line behind Ochre and walks the path you drew. That's the in-world reason a tile can only be used once, and it's the main visual reward: a growing conga line of happy animals.
 
-In later worlds the parade becomes a mechanic too. Some parade members act on their own as they pass things: a rabbit dives into a burrow to reach a Shy creature underground, a bird lifts off to greet a creature on a ledge, a bear rolls a log out of the way. Getting the order right ("cheer the bird before the cliff") adds a second layer to the planning.
+In later worlds, parade members also help as they pass things: a bear rolls away logs, a hedgehog tunnels through brambles, a bird flies up to greet a creature on a ledge. That makes greeting order matter even more: cheer the bear before you need the log moved.
 
 ### Stars
 
-1. **Everyone:** cheer every creature in the level.
-2. **Short and sweet:** finish under the par path length.
-3. **Bloom:** colour at least a set percentage of the level (shown as a meter). Paint pods, puddles and greeting order all affect it.
+1. **Cleared:** everyone cheered (required to pass).
+2. **Short and sweet:** finish at or under the par path length.
+3. **Bloom:** colour at least a set percentage of the level. Paint pods and the route you take affect it.
+
+### Worked example: "Goose First"
+
+An early level in the forest world, on a 5×6 grid. Columns are A-E from left to right, rows 1-6 from bottom to top.
+
+```
+       A        B        C        D        E
+  6   Owl→      .        .        .     Goose(8)
+  5    .        .       Rock      .        .
+  4    .        .        .      Stump      .
+  3    .        .     Bear(zZ)    .        .
+  2    .      Stump      .        .        .
+  1  Ochre      .        .        .        .
+```
+
+- **Owl (Shy)** at A6, watching to the right along row 6. To greet it, Ochre has to walk leftward along row 6 into B6.
+- **Goose (Worrier)** at E6 with a countdown of 8 beats.
+- **Bear (Sleepy)** at C3. No turning on B3, D3, C2 or C4.
+- **Warmth:** 15 tiles.
+
+**Tempting ideas that fail:**
+
+- *"The owl is closest."* Walking straight up column A arrives next to the owl from below, outside its gaze line. It hides. Even if you got past that, the goose's countdown would run out long before you reached it.
+- *"Cut through the middle to the goose."* Column C dead-ends at the bear, so you'd have to turn right next to it and wake it. Column D is cut off by the stump at D4, which forces the same noisy turn at D3.
+
+**The solution:** go for the goose the long way round, along the bottom and up the right edge (B1, C1, D1, E1, then E2-E5). Ochre arrives next to the goose on beat 8, just in time. Then step D5, D6, and walk left along row 6 (C6, B6). That's exactly the approach the owl wants. Finally go down column B (B5, B4, B3) and walk straight into the tile beside the sleeping bear without turning. 15 tiles, everyone cheered.
+
+A brute-force check of this layout confirms there's no shorter solution: every valid path is 15 tiles long, and the only differences are small (D1-D2-E2 instead of D1-E1-E2, or ending on C4 instead of B3). Every level should get this kind of automated check during level design.
+
+The "aha" is that serving the most urgent creature first also lines Ochre up perfectly for the shy one.
 
 ## The world gets brighter as you play
 
@@ -222,11 +281,14 @@ Standard cozy free-to-play.
 
 ## Relation to Red Line
 
-Bloomline is the same puzzle engine with a different meaning. Most Red Line rules map one-to-one (see the table above), so a single prototype of the drawing and run system could test both themes. Bloomline adds two things Red Line doesn't have: the colour spread (Bloom star) and the parade.
+Bloomline started as Red Line with a different meaning, and most creature rules still map to a Red Line enemy (see the temperament table). The big difference is the grid: Red Line's freehand line suits fast action, while Bloomline's snapped path makes every rule exact so levels can be designed as precise puzzles. Bloomline also adds the colour spread, Hush fog and the parade.
 
 ## Open questions
 
-- Is "Shy creatures must see you coming" readable to players who've never seen a gaze cone? The visual language needs testing with non-gamers.
+- Is "Shy creatures must see you coming" readable to players who've never seen a gaze line? The visual language needs testing with non-gamers.
+- Should the parade work like Snake, where tiles free up again once the end of the parade has passed? That's more true to the theme and adds depth, but it's much harder to read than "each tile once". Start with the simple rule and test the Snake variant later.
+- How big can the grid get on a phone before tiles are too small to drag accurately? Probably 8 tiles wide at most in portrait.
+- The grid can't feel like a spreadsheet. The art test has to prove that tiles can read clearly while still looking like a natural scene.
 - How long can the parade get before it clutters a small phone screen? Maybe followers shrink or only the last 10 are shown.
 - Do parade abilities add enough depth to carry 100+ levels, or does the game need another layer (weather, day and night)?
 - The colour-spread effect is the selling point. It needs an early technical art test to make sure it looks this good on mid-range phones.
