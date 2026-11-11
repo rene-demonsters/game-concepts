@@ -1,8 +1,10 @@
 # Concept art directions
 
-Four explorations of the same lighthouse landing, featuring the unnamed female capybara captain and shrimp first mate. The shared scene, outfits, and palette make the differences in rendering easier to compare. These are illustrations for choosing an art direction; character proportions, costume details, and staging remain provisional.
+Four base directions and a textured cutout variation explore the same lighthouse landing, featuring the unnamed female capybara captain and shrimp first mate. The shared scene, outfits, and palette make the differences in rendering easier to compare. These are illustrations for choosing an art direction; character proportions, costume details, and staging remain provisional.
 
 Generated with the built-in image generation tool. The exact [generation prompts](prompts.md) are saved for reuse.
+
+**Preferred direction: flat cutout animation (04).** The flat version was preferred after comparing it with the textured variation. Use it as the reference for further character and animation development.
 
 ## 1. Comic book
 
@@ -43,7 +45,19 @@ An initial animation set could include:
 
 Production art would be drawn and exported as separate transparent parts, including enough overlap to cover joints and hidden surfaces. This concept illustration is a flattened style reference. The first animation prototype should test one idle, one walk, and one pointing interaction at actual gameplay size before producing the full cast.
 
-This is the preferred direction if economical character animation becomes a priority. Painted background accents could be added later while retaining clean, flat character parts.
+This is the preferred direction for further development. Preserve its clean surfaces, readable shapes, and simple character parts.
+
+## 4b. Textured cutout variation
+
+Experiment retained for comparison. The flat version (04) was preferred.
+
+A variation of the flat cutout illustration with subtle paper grain, dry-brush pigment variation, and restrained surface detail. The background carries more texture, while character faces, outlines, hands, and joints stay clean. The aim is a warmer handmade finish with the same simple shapes and animation approach.
+
+![Textured cutout concept: capybara captain and shrimp at the lighthouse](05-textured-cutout.png)
+
+For production, bake the texture into each separate character part so it moves with that part. Keep its scale and contrast consistent across replacement mouth, hand, and body drawings. Use enough painted overlap around joints to prevent gaps. Background texture can be richer because it does not need to change with each pose.
+
+This remains a flattened concept illustration. Creating the layered production assets and a short animation test would establish how well the finish holds up in motion. The exact [edit prompt](05-textured-cutout-prompt.md) is included.
 
 ## Shared production considerations
 

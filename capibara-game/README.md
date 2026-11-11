@@ -169,7 +169,9 @@ Spoken dialogue and explanations are a core part of the intended experience. Sup
 
 ## Concept art
 
-The [concept art comparison](art/README.md) explores four treatments of the same lighthouse scene: comic book without violence, soft colored clay, a gouache storybook style, and flat cutout animation. The fourth direction simplifies character shapes and separates moving parts to make blinking, talking, walking, and pointing economical to animate. These are alternative directions; no final style has been selected. Exact [generation prompts](art/prompts.md) are included.
+The preferred art direction is **flat cutout animation**, using [the flat lighthouse illustration](art/04-flat-cutout.png) as the reference. It simplifies character shapes and separates moving parts to make blinking, talking, walking, and pointing economical to animate. Character proportions and production assets still need development.
+
+The [concept art comparison](art/README.md) also records comic book without violence, soft colored clay, gouache storybook, and a textured cutout experiment. Exact [generation prompts](art/prompts.md) are included.
 
 ![Comic-book concept art](art/01-comic-book.png)
 
@@ -178,6 +180,8 @@ The [concept art comparison](art/README.md) explores four treatments of the same
 ![Gouache storybook concept art](art/03-gouache-storybook.png)
 
 ![Flat cutout animation concept art](art/04-flat-cutout.png)
+
+The [textured cutout experiment](art/README.md#4b-textured-cutout-variation) is retained for comparison. The flat version was preferred.
 
 ## Technical direction
 

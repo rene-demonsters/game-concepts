@@ -4,6 +4,8 @@ Generated with the built-in image generation tool. These independent illustratio
 
 The fourth, animation-conscious direction has a separate [flat cutout prompt](04-flat-cutout-prompt.md).
 
+Its slightly more textured variation has a separate [edit prompt](05-textured-cutout-prompt.md), using the flat cutout illustration as the reference.
+
 The comic direction adapts [the repository's comic-book guide](../../art-styles/comic-book.md) to a peaceful children's adventure. The third direction is a gouache and layered-paper storybook treatment.
 
 ## 01-comic-book.png
