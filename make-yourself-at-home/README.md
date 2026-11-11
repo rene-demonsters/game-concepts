@@ -237,6 +237,8 @@ Hotline Miami informs the relationship between pleasurable violence, instruction
 
 ## First prototype
 
+**Play it:** [`prototype/`](prototype/README.md) is a browser-playable version of the birthday assignment, with placeholder art and no dependencies. Run `node serve.mjs` in that folder and open the URL it prints (normally http://localhost:8081/prototype/), or open `prototype/index.html` directly. A run takes 5–10 minutes.
+
 Build one location and a small home scene, then revisit that location after the consequences have reached home.
 
 Include four connected rooms, two people with incompatible requests, one recording, three enemy behaviours, and one melee moveset. Give preparation one visible combat payoff. Support preserving or destroying the recording through shared spaces and encounters. Carry its final state home. On the return visit, preserve physical damage and introduce one specific contradiction with evidence for competing explanations.

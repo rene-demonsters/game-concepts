@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Make Yourself at Home: prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stage">
+    <canvas id="game" tabindex="0" aria-label="Game view"></canvas>
+
+    <div id="hud" hidden>
+      <div id="goal" class="panel">
+        <div class="goal-label">Now</div>
+        <div class="goal-main"></div>
+        <ul class="goal-sub"></ul>
+        <div id="encbar" hidden>
+          <div class="row"><span>Song</span><div class="bar song"><i class="time"></i></div><span class="label"></span></div>
+          <div class="row ped"><span>Recording</span><div class="bar"><i></i></div></div>
+        </div>
+        <div class="prep"></div>
+      </div>
+      <div id="status">
+        <div id="carry" class="panel small warn" hidden>Carrying the recording: slower, no heavy</div>
+        <div id="hp" class="panel small"><span>Wren</span><div class="bar"><i></i></div></div>
+        <div id="room" class="panel small"></div>
+      </div>
+      <div id="caption" hidden><b></b><span></span></div>
+      <div id="toast" hidden>Journal updated (Tab)</div>
+      <div id="controls">WASD move · J / left-click light · K / right-click heavy · Space dodge · E interact · Tab journal · Esc pause · M mute</div>
+    </div>
+
+    <div id="dialogue" hidden>
+      <div class="who"></div>
+      <div class="text"></div>
+      <div class="hint"><span class="count"></span> · E / Space / click: next · Esc: skip</div>
+    </div>
+
+    <div id="down" class="overlay dim" hidden>
+      <div class="card">
+        <h2>Not like this</h2>
+        <p class="reason"></p>
+        <p>Your choice and preparation stay as they are.</p>
+        <p class="key">Press <kbd>E</kbd> to retry the fight</p>
+      </div>
+    </div>
+
+    <div id="title" class="overlay">
+      <div class="title-art" aria-hidden="true"></div>
+      <div class="card title-card">
+        <h1>Make Yourself at Home</h1>
+        <p class="tag">Prototype: the birthday recording</p>
+        <p>Your housemates need a birthday recording fetched from the play centre. Two people there want very different things done with it.</p>
+        <div class="buttons">
+          <button id="btn-continue">Continue</button>
+          <button id="btn-new">New game</button>
+        </div>
+        <p class="hint"></p>
+        <p class="small">WASD move · J / left-click light · K / right-click heavy · Space dodge · E interact · Tab journal · Esc pause</p>
+      </div>
+    </div>
+
+    <div id="pause" class="overlay dim" hidden>
+      <div class="card">
+        <h2>Paused</h2>
+        <div class="buttons col">
+          <button id="btn-resume">Resume (Esc)</button>
+          <button id="btn-journal">Journal (Tab)</button>
+          <button id="btn-retry">Restart this fight</button>
+          <button id="btn-mute">Sound: on</button>
+          <button id="btn-reset" class="quiet">Start the whole prototype over</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="journal" class="overlay dim" hidden>
+      <div class="card wide">
+        <h2>Journal</h2>
+        <p class="small">Observed things on the left. Other people's claims on the right. Nothing here is graded.</p>
+        <div class="cols"></div>
+        <div class="buttons"><button id="btn-journal-close">Close (Tab)</button></div>
+      </div>
+    </div>
+
+    <div id="end" class="overlay dim" hidden>
+      <div class="card wide">
+        <h2>Dinner's on the table</h2>
+        <div class="summary"></div>
+        <div class="cols"></div>
+        <div class="buttons">
+          <button id="btn-other">Try the other approach (back at the play centre)</button>
+          <button id="btn-restart" class="quiet">Start over from home</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Classic scripts (no modules) so index.html also works when opened straight from disk. -->
+  <script src="js/game.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
