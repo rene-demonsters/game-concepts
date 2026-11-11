@@ -45,7 +45,7 @@ Versions are the current `latest` on npm as of 2026-11-11.
 | Lint | **oxlint** | TS 7 has no compiler JS API yet, so anything that relies on it (type-aware typescript-eslint rules, `vite-plugin-checker`) may not work. Check this in M0. |
 | Later | Electron + steamworks.js | Not in the prototype. See "Ready for Steam". |
 
-The project lives in `bloomline/prototype/`, like the other prototypes in this repo.
+The project lives in `bloomline/playtest/`, like the other prototypes in this repo.
 
 ## Architecture
 
@@ -64,7 +64,7 @@ Three layers, with dependencies pointing one way only:
 ### Folder layout
 
 ```
-bloomline/prototype/
+bloomline/playtest/
   index.html  vite.config.ts  tsconfig.json  capacitor.config.ts  package.json
   src/
     main.ts                  boot: pick platform, load save, start Phaser
@@ -287,7 +287,7 @@ Sizes are rough, for one developer.
 
 ### M0: Skeleton on every device (1-2 days)
 
-- `bloomline/prototype/` as a pnpm project with Vite 8, Phaser 4, TS 7, oxlint, Vitest.
+- `bloomline/playtest/` as a pnpm project with Vite 8, Phaser 4, TS 7, oxlint, Vitest.
 - `cap add android` and `cap add ios`. Portrait lock on phones, status bar hidden, WebView bounce and zoom off, Android back button handled.
 - A test scene: a grid of tappable vector tiles that light up under the finger.
 - Live reload on a real Android phone and a real iPhone.
