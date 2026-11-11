@@ -145,8 +145,8 @@ The "aha" is that serving the most urgent creature first also lines Ochre up per
 
 Colour comes back on three scales:
 
-- **In a level:** every greeting splashes colour across the scene. The finished level is a hand-painted picture of your route.
-- **On the map:** each finished level restores colour to its spot on the world map. Finishing a world turns the whole region from graphite to full colour, with a short celebration.
+- **In a level:** every greeting splashes colour across the scene. The finished level is a little clay diorama of your route.
+- **On the map:** each finished level restores colour to its spot on the world map. Finishing a world turns the whole region from unpainted clay to full colour, with a short celebration.
 - **In the music:** the menu theme starts as a single quiet piano. Each finished world adds an instrument, until the title screen plays the full song.
 
 The level-complete screen shows a **group photo**: Ochre and the whole parade posing in the now-colourful scene. Players can save or share it. (This replaces Red Line's "crime scene photo.")
@@ -261,11 +261,18 @@ Standard cozy free-to-play.
 
 ## Art direction
 
-- **Painted storybook**, see [`art-styles/painted-storybook.md`](../art-styles/painted-storybook.md). Textured gouache, soft shapes and warm light.
-- The gray state isn't flat gray. It's soft graphite and pencil wash on paper, still pretty, but quiet and a little sad. Creatures are sketched and droopy.
-- Colour returns like **watercolour blooming into wet paper**: fast at the creature, softening at the edges. The spread should be the most satisfying effect in the game.
-- Camera: a slightly tilted top-down "diorama" view, so creatures and their faces read clearly while the path is still easy to draw.
-- The drawn path glows like warm light and leaves a trail of small flowers behind Ochre.
+**Clay toy diorama.** See [`art/05-grid-clay.png`](art/05-grid-clay.png) for the reference image. It was picked over the painted storybook, cut-paper and flat vector tests because it feels warm and touchable, and it works for every world: forest, harbour, snow, funfair, town and sky are all easy to imagine as little clay sets.
+
+- **Materials:** soft matte clay with visible fingerprints and slightly uneven edges, so it feels handmade. Chunky, rounded shapes everywhere. No hard edges, no glossy plastic.
+- **Each level is a toy set** sitting on a table: a slab of clay tiles with the scene built on top, seen from a slightly tilted top-down camera with gentle tilt-shift blur at the edges. Readability comes first: the blur never touches the playing area.
+- **Characters** are small clay figures with big heads and simple faces, so they read well at phone size. Ochre is the only coloured figure at the start of every level.
+- **The gray state is unpainted clay:** soft, pale gray clay, still pretty and tactile, just quiet. Creatures droop a little.
+- **Colour comes back like paint soaking into the clay:** fast at the creature, softening at the edges, with flowers and grass popping up out of the tiles. The spread should be the most satisfying effect in the game.
+- **Grid readability:** each tile is a separate, slightly raised clay square with a thin gap between tiles, so the grid reads without drawn lines. Grid lines only fade in while drawing. Obstacles (stumps, rocks, bushes) sit clearly on one tile each.
+- **Rule markers** are clay props too: the owl's gaze line is a row of small clay dots, the goose's countdown is a little clay sign, the bear's zZ floats above it, the hedgehog's soft side is a fluffy patch.
+- **The drawn path** is a glowing warm line that snaps between tile centres and leaves a trail of small clay flowers behind Ochre.
+- **Pastel palette** in colour, with each area blooming into its own dominant colour (see Worlds), so finished areas look clearly different on the map.
+- **Production:** the look suits real-time 3D with a stylised clay shader, or pre-rendered sprites. A quick technical art test should decide which, together with the colour-spread effect.
 
 ## Audio
 
