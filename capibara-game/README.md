@@ -52,7 +52,11 @@ Each adventure has a complete, satisfying ending. The same duo can carry differe
 
 These are possible stories for the series. Titles are provisional; character, ship, and location names remain undecided.
 
+Each linked treatment includes a complete story and ending, locations, a connected puzzle sequence, replay variations, hints, and rules that preserve a route to completion.
+
 ### The Lighthouse That Went Dark
+
+[Read the story and puzzle treatment](adventures/01-lighthouse.md).
 
 On the night of the floating lantern festival, the lighthouse stops working. Strange lights appear near a shipwreck on a neighboring island, and everyone suspects a ghost ship. The captain and her first mate sail between the harbor, lighthouse, and wreck to discover what is happening.
 
@@ -65,6 +69,8 @@ Puzzle ideas:
 
 ### The Treasure Nobody Wanted
 
+[Read the story and puzzle treatment](adventures/02-treasure.md).
+
 The duo discovers a chest full of apparently useless objects: a bent spoon, a cracked bell, and one enormous button. An old map suggests they belong to a legendary pirate's treasure, but every islander recognizes something different in the collection. Each returned object brings the crew closer to finding what the old captain actually treasured.
 
 Puzzle ideas:
@@ -75,6 +81,8 @@ Puzzle ideas:
 - Connect the islanders' memories to reconstruct the old captain's travels.
 
 ### The Ghost of the Abandoned Fort
+
+[Read the story and puzzle treatment](adventures/03-fort.md).
 
 Someone—or something—is ringing an abandoned fort's bell and leaving glowing footprints on the beach. The harbor's bravest pirate refuses to investigate without his lucky slippers. The duo explores the fort to discover who needs help behind the spooky performance.
 
@@ -87,6 +95,8 @@ Puzzle ideas:
 
 ### The Great Backwards Boat Race
 
+[Read the story and puzzle treatment](adventures/04-boat-race.md).
+
 The harbor's annual race is about to begin, but boats keep turning in circles, course markers have drifted away, and the prize has been delivered to the wrong island. A boastful rival captain has a spectacularly impractical ship. The main adventure is about getting everyone ready; the race itself can be a short, forgiving finale.
 
 Puzzle ideas:
@@ -97,6 +107,8 @@ Puzzle ideas:
 - Repair the starting mechanism and retrieve the misplaced prize.
 
 ### The Island That Disappeared
+
+[Read the story and puzzle treatment](adventures/05-island.md).
 
 A baker asks the crew to deliver a birthday cake to an island that seems to have vanished. Its residents have left clues around the surrounding waters, but the old charts disagree about where it should be. The investigation reveals a passage accessible at low tide.
 
@@ -154,6 +166,18 @@ Illustrated 2D locations, distinct character silhouettes, readable interactive o
 Keep animation modest: static expressive poses, short movements, blinking, simple effects, and transitions. Strong sound design and responsive interactions should give exploration a sense of life. Optional environmental jokes can reward clicking without becoming required puzzle steps.
 
 Spoken dialogue and explanations are a core part of the intended experience. Support subtitles, replayable lines, and separate music, effects, and voice controls. Store text and audio references by language and puzzle variant so additional languages can be added consistently. Prototype in one language first.
+
+## Concept art
+
+The [concept art comparison](art/README.md) explores four treatments of the same lighthouse scene: comic book without violence, soft colored clay, a gouache storybook style, and flat cutout animation. The fourth direction simplifies character shapes and separates moving parts to make blinking, talking, walking, and pointing economical to animate. These are alternative directions; no final style has been selected. Exact [generation prompts](art/prompts.md) are included.
+
+![Comic-book concept art](art/01-comic-book.png)
+
+![Soft colored clay concept art](art/02-soft-clay.png)
+
+![Gouache storybook concept art](art/03-gouache-storybook.png)
+
+![Flat cutout animation concept art](art/04-flat-cutout.png)
 
 ## Technical direction
 
