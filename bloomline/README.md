@@ -6,6 +6,8 @@ It keeps the core of [Red Line](../red-line/README.md): plan the whole run, draw
 
 **Player promise:** draw one perfect path, and watch a whole world wake up behind you.
 
+See the [storyboard](docs/storyboard.md) for a mock-up walkthrough of a first play session and one mock-up per world.
+
 Title availability has not been checked. Alternatives: *Colour Me In*, *Warm Path*, *Hug Run*.
 
 ## Pillars
