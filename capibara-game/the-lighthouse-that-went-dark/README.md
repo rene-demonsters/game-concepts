@@ -8,6 +8,8 @@ Expanded design for the first Capibara Game title. This folder is the source of 
 - [Puzzles and variants](puzzles.md): dependencies, item locations, authored alternatives, hints, and completion rules.
 - [Asset generation manifest](assets.md): shared visual contract, asset IDs, prompt subjects, state requirements, and independent work packages.
 
+The title uses the [shared series UI](../shared-ui/README.md), including the bottom bubble inventory and standard controls. Its asset briefs supply story-specific content inside that interface.
+
 ## Adventure promise
 
 A female capybara captain and her tiny shrimp first mate investigate a dark lighthouse on the evening of a floating lantern festival. Explore a friendly harbor and a lighthouse island, carry useful objects between scenes, and discover that the supposed ghost ship is a helpful neighbor. The mystery resolves through observation and kindness. No villain, combat, danger timer, reading requirement, or penalty for experimenting.

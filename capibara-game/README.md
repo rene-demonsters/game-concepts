@@ -135,6 +135,8 @@ Each story can vary which route needs repairing, what a character requests, or w
 
 Use one shared inventory. The child selects a destination, object, or interaction, and the appropriate character takes the lead. Contextual cooperation keeps both characters useful without requiring a separate character-switching system.
 
+All titles use the same [series UI](shared-ui/README.md): a persistent bubble-style inventory near the bottom of the screen, with consistent map, hint, menu, and speech controls. Shared inventory here means both heroes use one inventory within a story; the UI is reused across titles, while each adventure keeps its own items and progress. Title-specific assets supply item pictures, maps, and clues inside the shared interface.
+
 Trying an incorrect object produces a brief, friendly response. Important information can be heard again, and a contextual hint system can move from reminding the player of the goal toward a more explicit suggestion.
 
 ### Example cooperative puzzle

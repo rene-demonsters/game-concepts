@@ -4,6 +4,8 @@ Use this as a prompt inventory and handoff contract. No assets have been generat
 
 ## Shared contract before generation
 
+Use the [series UI specification and SHUI asset IDs](../shared-ui/README.md). Bubble inventory frames, standard controls, subtitle panels, and UI sounds are generated once for the series and reused here. This title owns its item icons, map content, clue cards, and Ready action. The UI-CONTROLS row below is an integration checklist, not permission to generate another UI skin.
+
 First choose one of the [series art directions](../art/README.md), approve a duo model sheet, and lock palette, costume, scale, and camera. For planning, use the textured cutout direction as a provisional candidate, not an approved final style. Do not let independent agents choose different styles. Existing flattened examples are references, not layered production assets.
 
 Proposed production canvas: 1920×1080, fixed three-quarter side view, with a clear bottom 180-pixel inventory zone. Keep indispensable interactions above that zone. Export backgrounds at canvas size; export props as tight transparent PNGs with recorded canvas positions and pivot coordinates. Author character masters large enough for close-ups, then test the shrimp's readability at actual screen size. Use consistent relative scale; dialogue portraits can enlarge him independently.
@@ -80,7 +82,7 @@ For the duo, export blink and small mouth-shape sets, separate arms/hands and le
 | UI-MAP | Illustrated harbor/lighthouse travel map with prominent destination icons. | Locked/unlocked destinations, chart access, active goal picture, saved signal color/symbol reminder. Author labels separately. |
 | UI-CHART-A/B | Three ordered large pictograms on I02 master. | Circle-triangle-star / star-circle-triangle; same matching buoy masters. |
 | UI-SIGNAL-A/B | Large picture landing card and matching recipe pictures. | Two long flashes → orange sun → red+yellow; three short → green leaf → blue+yellow. Author timing/symbol layout consistently. |
-| UI-CONTROLS | Inventory slot, selected-item border, hint shell, exit arrows, replay speech, subtitles, large Ready icon. | Normal/focused/pressed/disabled where applicable; symbols readable without text. |
+| UI-CONTROLS | Integrate shared SHUI inventory bubbles, selection states, hint shell, map/menu, replay, and subtitle assets. Supply scene exit arrows and the story-specific Ready icon in the shared style. | Reuse shared control states and layout; symbols readable without text. |
 | FX-LIGHT | Lighthouse beam, inspection light cone, reflector glint, signal lamp glow, wreck flash. | Warm non-scary lighting; exact flash timings authored in game; no rapid strobe. |
 | FX-WORLD | Small water loops, lantern sway, horn puff, rinse splash, restart glow. | Separate overlays with stable origins and no essential clue hidden by effects. |
 | AUDIO-VO | Spoken story, requests, pickups, wrong-use feedback, three hint levels, finale. | Key lines by puzzle/substep/variant/language. Record actual location, shape, and color alternatives from matrix; do not use one misleading generic hint. |
