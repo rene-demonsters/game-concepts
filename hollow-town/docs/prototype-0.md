@@ -27,7 +27,7 @@ Question Prototype 0 must answer: **is watching perceived consensus diverge from
 
 ## UI structure
 
-- **Layout:** town canvas about 65% width. Right rail: bars panel on top, day budget and resources, context panel. Bottom: phase strip (Read, Act, Watch) with a day dial.
+- **Layout (phone portrait first):** town canvas fills the upper area, the bars panel is a slim strip on top, and a bottom sheet holds the day budget, resources, Act tray and inspect card, with the phase strip (Read, Act, Watch) and day dial above it. Tablet and desktop later use a right rail (town canvas about 65% width) with the same components.
 - **Read:** hover shows an inspect card, click pins it. Lens toggles re-skin the same nodes for Opinion, Loudness, Isolation, Wavering.
 - **Act:** a tray with 2 tools (bot discussion, fake article) and 2-3 slots. Drag a tool onto a neighborhood or hero. A preview shows predicted audience (a range, not exact) and Heat deltas by tell type. Button: "Run the day."
 - **Watch:** input limited to pause, 1x/4x, skip. A scrolling log of cause-and-effect chips ("receipts") at the bottom. Add one or two interrupt moments per day (a hero starts asking questions, a tell trends) where the player spends a small reserve to cover up, deny or sacrifice an account.
@@ -44,7 +44,7 @@ Question Prototype 0 must answer: **is watching perceived consensus diverge from
 - **Testing:** Vitest in a node environment on `sim`. Golden-seed tests (same seed gives a byte-identical event hash), property tests with fast-check (opinions stay in [-1, 1], the gap is 0 with no bots), and a **balance harness CLI** that runs 1000 seeds and prints outcome distributions. The harness is the main design tool.
 - **Save/replay:** store `{version, seed, townConfig, actions: [{day, tool, target, params}]}`. Determinism gives replays and ghost comparison for free. Add a per-day state hash for desync detection and a `simVersion` that invalidates old replays. Avoid cross-engine float hazards (`Math.sin` etc. in sim logic) or accept same-engine determinism. Autosave to localStorage at the end of each Act phase; optional share-by-URL.
 - **Performance budget:** 60fps at 4x on a mid phone. Sim step under 2ms per tick at 80 agents, draw under 6ms, no allocations in the hot loop (pooled pulses and bubbles), bundle under 300KB gzipped, cold start under 2s.
-- **Mobile/touch:** Pointer Events only, 44px minimum hit targets (snap-to-nearest-node tap with a magnifier ring), tap-to-pin inspect, landscape-first with the right rail as a bottom sheet in portrait.
+- **Mobile/touch:** Pointer Events only, 44px minimum hit targets (snap-to-nearest-node tap with a magnifier ring), tap-to-pin inspect, portrait-first (phone), with the right rail layout reserved for tablet and desktop.
 - **Distribution (playtests and demos only; the release is a paid full game):** itch.io HTML5 upload (`base: './'`) plus the same build on Cloudflare Pages or GitHub Pages. No SharedArrayBuffer (itch doesn't provide COOP/COEP headers), so use message passing.
 
 ## Build plan (about 4-5 weeks for one person)

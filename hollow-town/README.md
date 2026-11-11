@@ -155,7 +155,7 @@ Details in `docs/prototype-0.md`. Highlights:
 
 ## Tech
 
-Canvas 2D (not PixiJS) for the prototype, a pure TypeScript sim core with no DOM dependency, a seeded RNG with per-subsystem streams, a web-worker pool for ghost runs, Vite and Vitest, and a headless balance harness that runs 1000 seeds. Playtest and demo builds ship as HTML5 on a web host; the release is a paid full game (platform to be decided). Full plan in `docs/prototype-0.md`.
+Canvas 2D (not PixiJS) for the prototype, a pure TypeScript sim core with no DOM dependency, a seeded RNG with per-subsystem streams, a web-worker pool for ghost runs, Vite and Vitest, and a headless balance harness that runs 1000 seeds. Playtest and demo builds ship as HTML5 on a web host; the release is a paid full game, phone first and Steam later. Full plan in `docs/prototype-0.md`.
 
 ## Prototype 0
 
@@ -170,7 +170,7 @@ In scope:
 
 Out of scope: video, review bombing, Field Guide, exposure phase, defender epilogue, audio, campaigns 2-5, real-world movement.
 
-The order of attack is a headless balance harness and a fake-event renderer spike in parallel in week 1, since those two tell us whether the idea works. Metrics to check (effect-size mean/variance, flip rate vs margin, silent fraction, strategy diversity, determinism) are in `docs/simulation-model.md`. Estimated at 4-5 weeks for one person.
+The order of attack is a headless balance harness and a fake-event renderer spike in parallel in week 1, since those two tell us whether the idea works. Metrics to check (effect-size mean/variance, flip rate vs margin, silent fraction, strategy diversity, determinism) are in `docs/simulation-model.md`. Prototype 0 targets a phone-sized portrait screen first (it runs in a mobile browser for playtests). Estimated at 4-5 weeks for one person.
 
 ## Later milestones
 
@@ -188,4 +188,4 @@ Resolved. Revisit only if playtests say otherwise.
 2. **Field Guide: skippable or not.** A short mandatory part (hero fates and what still worked) plus an opt-in detective mode for the deep dive.
 3. **Educator mode vs. deeper systems.** Build the exposed-sim version first; educator mode is a later skin.
 4. **When to introduce Heat and Credibility.** Model both from day 1, but present them late in onboarding, one at a time.
-5. **Business model.** A **paid, full game**. There is no free tier. Platform (Steam, itch.io or both) is still to be decided. Web builds are used only for playtests and demos.
+5. **Business model.** A **paid, full game**. There is no free tier. **Phone first** (iOS/Android, portrait), **Steam later**. Web builds are used for playtests and demos.
