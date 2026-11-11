@@ -94,20 +94,93 @@ The level-complete screen shows a **group photo**: Ochre and the whole parade po
 
 ## Worlds
 
-Each world is a gray place with its own reason for being sad, its own creatures and its own instrument family.
+Each world is a themed place with its own reason for being sad, its own creatures and its own instrument family. To keep 100+ levels from blurring together, every world is split into **areas**: distinct parts of that place, each with its own backdrop, level shape and one local twist.
 
-- **The Silent Parliament:** the first world, a forest where the owls stopped holding their nightly parliament. Rabbits, foxes, owls and a big sad bear. Woodwinds.
-- **Port Nobody:** a fishing village where no boats come in anymore, with seagulls, crabs, otters and a lonely lighthouse keeper. Accordion and strings.
-- **The Long Winter:** a mountain village stuck in one winter that never ended. Hugs literally warm people up; frozen creatures need a blanket. Bells.
-- **The Stalled Funfair:** a carnival that stopped mid-ride, with sleepy animatronics, a sad carousel horse and a candy-floss machine that's lost its colour. Brass.
-- **Mondayville:** a gray little town where it has been Monday for three years and people forgot how to smile. Commuters, a grumpy mail carrier, a cat on every windowsill. The first world with humans. Swing band.
-- **Above the Hush:** a sky world over the gray cloud itself, with sheep-clouds and kites. Choir.
+### Structure
 
-**Boss levels** end each world with a creature that's too big or sad for one run, solved across a sequence of strokes: a giant forest troll who just wants a friend, a whale stranded in a gray tide pool. The final level is the Hush itself, which turns out to be a very large, very lonely cloud. You give it a hug.
+- **6 worlds at launch**, each with **4 areas of 5 levels**, plus a **boss level** at the end of the world. That's about 126 levels, with new worlds added in live updates.
+- Each area changes four things:
+  - **Backdrop and palette:** what colour the area blooms into is different per area, so finished areas look clearly different on the map.
+  - **Level shape:** open clearings, narrow tunnels, vertical climbs, islands, loops. Different shapes ask for different kinds of paths.
+  - **One local twist:** a mechanic that only exists in that area, or debuts there. The core rules stay the same; the twist adds flavour without needing a tutorial.
+  - **Music variation:** the world's instrument family plays a different arrangement per area.
+- On the world map, each area is its own island of gray that brightens as its five levels are finished. When all four areas are done, the boss level unlocks and the whole world blooms at once.
+
+### The Silent Parliament (forest, woodwinds)
+
+A forest where the owls stopped holding their nightly parliament. Rabbits, foxes, owls, hedgehogs and a big sad bear.
+
+| Area | Setting | Local twist |
+|---|---|---|
+| **The Forest Edge** | Sparse birches and a meadow. Wide open, gentle. | The tutorial area. Gloomy and Shy creatures only. |
+| **The Warren** | Underground rabbit tunnels lit by glowing roots. Narrow, branching layouts. | **Burrows:** run into one hole, pop out of another. |
+| **The Mushroom Ring** | A clearing of giant mushrooms in a perfect circle. | **Bounce caps:** mushrooms launch Ochre over obstacles. Sleepy creatures debut. |
+| **The Great Oak** | Inside an enormous hollow tree. Vertical, spiralling levels. | **Branches and ladders:** paths climb between floors. |
+| **Boss: The Speaker** | The parliament clearing. | The old owl who chairs the parliament refuses to open the session. Cheer every member in the right order across three strokes. |
+
+### Port Nobody (harbour village, accordion and strings)
+
+A fishing village where no boats come in anymore. Seagulls, crabs, otters, cats and a lonely lighthouse keeper.
+
+| Area | Setting | Local twist |
+|---|---|---|
+| **The Dunes** | Sand, beach grass and washed-up crates. | **Sideways crabs:** creatures that walk back and forth on a fixed track. |
+| **The Fish Market** | Crowded stalls and awnings. Tight, maze-like. | **Gulls:** grab the first gift on your path unless you greet them first. |
+| **The Pier** | Planks, gaps and moored boats. | **Rocking boats:** platforms that tilt between two positions as the run goes. |
+| **The Tide Pools** | Rocks and pools at the water's edge. | **Tide:** water rises halfway through a run and covers part of the level. |
+| **Boss: The Lighthouse** | A spiral staircase up the lighthouse. | Cheer the keeper's old animals floor by floor to relight the lamp. |
+
+### The Long Winter (mountain village, bells)
+
+A mountain village stuck in a winter that never ended. Hugs literally warm people up.
+
+| Area | Setting | Local twist |
+|---|---|---|
+| **The Frozen Lake** | A big sheet of ice with fishing holes. | **Ice:** Ochre slides past corners, like a world full of puddles. |
+| **The Village Square** | Snowed-in houses, a frozen fountain. | **Frozen creatures:** need a blanket first, then a hug. |
+| **The Sledding Slopes** | Steep, long, downhill levels. | **Slopes:** Ochre speeds up going down and slows down going up. |
+| **The Hot Springs** | Steaming pools with bathing animals. | **Steam:** hides gaze cones until you're close. |
+| **Boss: The Bell Tower** | A frozen tower above the village. | A huge mountain goat holds the bell rope and won't let go. Thaw it with a parade big enough to warm the tower. |
+
+### The Stalled Funfair (carnival, brass)
+
+A carnival that stopped mid-ride. Sleepy animatronics, prize plushies and a candy-floss machine that has lost its colour.
+
+| Area | Setting | Local twist |
+|---|---|---|
+| **The Midway** | Game stalls, prize shelves and string lights. | **Prize plushies:** come alive and join the parade when the stall next to them blooms. |
+| **The Hall of Mirrors** | Mirror corridors. | **Mirrors:** a reflected Ochre runs a mirrored copy of your path and greets creatures on the other side. |
+| **The Carousel** | One big rotating level. | **Rotation:** the level turns while you run, so creatures move into and out of your path. |
+| **The Ghost Train** | A dark ride with painted spooks. | **Darkness:** only the glow of your path lights up creatures. |
+| **Boss: The Big Wheel** | The giant Ferris wheel. | Cheer the riders car by car as the wheel slowly comes back to life. |
+
+### Mondayville (town, swing band)
+
+A gray little town where it has been Monday for three years and people forgot how to smile. The first world with humans.
+
+| Area | Setting | Local twist |
+|---|---|---|
+| **The Station** | Platforms, ticket barriers and commuters. | **Trains:** pass through on a timer and block tracks while they're in. |
+| **The Office** | Cubicles, coffee machines and plants. | **Lifts:** move Ochre between floors. Coffee gives a short speed boost. |
+| **The Laundrette** | Washing machines and sleepy cats. | **Spinning drums:** fling Ochre out in a new direction. |
+| **The Rooftops** | Gardens, pigeons and washing lines. | **Washing lines:** zip lines between buildings. |
+| **Boss: The Town Clock** | The clock tower stuck on Monday morning. | Cheer the clockkeeper and the gears start turning again. It's finally Tuesday. |
+
+### Above the Hush (sky, choir)
+
+A sky world over the gray cloud itself, with sheep-clouds and kites.
+
+| Area | Setting | Local twist |
+|---|---|---|
+| **The Kite Fields** | Grassy floating islands full of tangled kites. | **Updrafts:** carry Ochre between islands. |
+| **The Flock** | A herd of drifting sheep-clouds. | **Drifting platforms:** the level moves slowly while you plan. |
+| **The Weather Works** | A machine that makes the weather. | **Switches:** greetings flip rain, sun and wind, which changes the level mid-run. |
+| **The Edge of the Hush** | Where colour runs out. | Everything learned so far, mixed. |
+| **Final boss: The Hush** | Inside the gray cloud. | The Hush turns out to be a very large, very lonely cloud. The final level is one long stroke with the entire parade behind you. You give it a hug. |
 
 ## Progression and meta
 
-- **A long level map**, about 20 levels per world, with a new temperament, gift or environment piece every 3-5 levels.
+- **A long level map**, organised as worlds and areas (see Worlds). A new temperament, gift or area twist arrives every 3-5 levels.
 - **Companions:** one cheered creature per world can be invited to join permanently. Before a level, pick one companion to start the run in your parade. Each has a small ability (the owl shows Shy gaze cones from the start, the rabbit adds a little path length). Companions are earned, never sold.
 - **Ochre's wardrobe:** scarves, hats, backpacks and greeting styles, unlocked with stars. Purely cosmetic.
 - **Daily Picnic:** one hand-made level a day, with a leaderboard for path length and Bloom.
