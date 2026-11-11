@@ -8,7 +8,7 @@ It keeps the core of [Red Line](../red-line/README.md): plan the whole run, draw
 
 See the [storyboard](docs/storyboard.md) for a mock-up walkthrough of a first play session and one mock-up per world.
 
-Title availability has not been checked. Alternatives: *Colour Me In*, *Warm Path*, *Hug Run*.
+Title availability has not been checked. Alternatives: *First Coat*, *Wet Paint*, *Undercoat*.
 
 ## Pillars
 
@@ -69,7 +69,7 @@ Each temperament is easy on its own. Levels get hard when two of them pull in op
 | **Gloomy** | Cheers up when greeted from any side. The basic creature. | Goon |
 | **Shy** | Watches one straight line of tiles. It must **see you coming**: you can only greet it by walking toward it along that line. Step next to it from any other side first and it hides for the rest of the run. | Gunman |
 | **Bouncy** | A puppy or lamb that runs back and forth along a track, one tile per beat. Greet it from beside the track. Step onto its track at the moment it arrives and you get bowled over (the run ends in a pile of licks). | Dog |
-| **Big sad** | A big creature (a bear, a moose, a troll) that needs two greetings: be next to it at two separate moments in the path, or bring a cookie basket. | Heavy |
+| **Big sad** | A big creature (a bear, a moose, a troll) that needs two greetings, with Ochre stepping away from it in between (walking along its side counts once), or bring a cookie basket. | Heavy |
 | **Prickly** | A hedgehog or cactus creature with one soft side, marked with a fluffy patch. Greetings from other sides do nothing. Mittens let you greet it from anywhere. | Shield guy |
 | **Worrier** | A goose with a countdown over its head. If it's still gray when the countdown hits zero, it honks, and every Shy creature in the level hides. | Panic button guy |
 | **Sleepy** | Don't turn on any tile next to it: walking straight past is quiet, turning is noisy. Wake it noisily and it gets grumpy and refuses to be cheered. | (new) |
@@ -221,10 +221,10 @@ A forest where the owls stopped holding their nightly parliament. Rabbits, foxes
 
 | Area | Setting | Local twist |
 |---|---|---|
-| **The Forest Edge** | Sparse birches and a meadow. Wide open, gentle. | The tutorial area. Gloomy and Shy creatures only. |
-| **The Warren** | Underground rabbit tunnels lit by glowing roots. Narrow, branching layouts. | **Burrows:** run into one hole, pop out of another. |
-| **The Mushroom Ring** | A clearing of giant mushrooms in a perfect circle. | **Bounce caps:** mushrooms launch Ochre over obstacles. Sleepy creatures debut. |
-| **The Great Oak** | Inside an enormous hollow tree. Vertical, spiralling levels. | **Branches and ladders:** paths climb between floors. |
+| **The Public Gallery** | Sparse birches and a meadow. Wide open, gentle. | The tutorial area. Gloomy and Shy creatures only. |
+| **The Division Lobbies** | Underground rabbit tunnels lit by glowing roots. Narrow, branching layouts. | **Burrows:** run into one hole, pop out of another. |
+| **The Recess** | A clearing of giant mushrooms in a perfect circle. | **Bounce caps:** mushrooms launch Ochre over obstacles. Sleepy creatures debut. |
+| **The Upper House** | Inside an enormous hollow tree. Vertical, spiralling levels. | **Branches and ladders:** paths climb between floors. |
 | **Boss: The Speaker** | The parliament clearing. | The old owl who chairs the parliament refuses to open the session. Cheer every member in the right order across three strokes. |
 
 ### Port Nobody (harbour village, accordion and strings)
@@ -233,23 +233,23 @@ A fishing village where no boats come in anymore. Seagulls, crabs, otters, cats 
 
 | Area | Setting | Local twist |
 |---|---|---|
-| **The Dunes** | Sand, beach grass and washed-up crates. | **Sideways crabs:** creatures that walk back and forth on a fixed track. |
-| **The Fish Market** | Crowded stalls and awnings. Tight, maze-like. | **Gulls:** grab the first gift on your path unless you greet them first. |
-| **The Pier** | Planks, gaps and moored boats. | **Rocking boats:** platforms that tilt between two positions as the run goes. |
-| **The Tide Pools** | Rocks and pools at the water's edge. | **Tide:** water rises halfway through a run and covers part of the level. |
-| **Boss: The Lighthouse** | A spiral staircase up the lighthouse. | Cheer the keeper's old animals floor by floor to relight the lamp. |
+| **Unclaimed Freight** | Sand, beach grass and washed-up crates. | **Sideways crabs:** creatures that walk back and forth on a fixed track. |
+| **Yesterday's Catch** | Crowded stalls and awnings. Tight, maze-like. | **Gulls:** grab the first gift on your path unless you greet them first. |
+| **The Empty Berths** | Planks, gaps and moored boats. | **Rocking boats:** platforms that tilt between two positions as the run goes. |
+| **Half Tide** | Rocks and pools at the water's edge. | **Tide:** water rises halfway through a run and covers part of the level. |
+| **Boss: Nobody's Light** | A spiral staircase up the lighthouse. | Cheer the keeper's old animals floor by floor to relight the lamp. |
 
-### The Long Winter (mountain village, bells)
+### Thaw Pending (mountain village, bells)
 
 A mountain village stuck in a winter that never ended. Hugs literally warm people up.
 
 | Area | Setting | Local twist |
 |---|---|---|
-| **The Frozen Lake** | A big sheet of ice with fishing holes. | **Ice:** Ochre slides past corners, like a world full of puddles. |
-| **The Village Square** | Snowed-in houses, a frozen fountain. | **Frozen creatures:** need a blanket first, then a hug. |
-| **The Sledding Slopes** | Steep, long, downhill levels. | **Slopes:** Ochre speeds up going down and slows down going up. |
-| **The Hot Springs** | Steaming pools with bathing animals. | **Steam:** hides gaze cones until you're close. |
-| **Boss: The Bell Tower** | A frozen tower above the village. | A huge mountain goat holds the bell rope and won't let go. Thaw it with a parade big enough to warm the tower. |
+| **Unsupervised Ice** | A big sheet of ice with fishing holes. | **Ice:** Ochre slides past corners, like a world full of puddles. |
+| **Closed Until Spring** | Snowed-in houses, a frozen fountain. | **Frozen creatures:** need a blanket first, then a hug. |
+| **The Run-Out** | Steep, long, downhill levels. | **Slopes:** Ochre speeds up going down and slows down going up. |
+| **No Diving** | Steaming pools with bathing animals. | **Steam:** hides gaze cones until you're close. |
+| **Boss: The Goat Has the Rope** | A frozen tower above the village. | A huge mountain goat holds the bell rope and won't let go. Thaw it with a parade big enough to warm the tower. |
 
 ### The Stalled Funfair (carnival, brass)
 
@@ -257,23 +257,23 @@ A carnival that stopped mid-ride. Sleepy animatronics, prize plushies and a cand
 
 | Area | Setting | Local twist |
 |---|---|---|
-| **The Midway** | Game stalls, prize shelves and string lights. | **Prize plushies:** come alive and join the parade when the stall next to them blooms. |
-| **The Hall of Mirrors** | Mirror corridors. | **Mirrors:** a reflected Ochre runs a mirrored copy of your path and greets creatures on the other side. |
-| **The Carousel** | One big rotating level. | **Rotation:** the level turns while you run, so creatures move into and out of your path. |
-| **The Ghost Train** | A dark ride with painted spooks. | **Darkness:** only the glow of your path lights up creatures. |
-| **Boss: The Big Wheel** | The giant Ferris wheel. | Cheer the riders car by car as the wheel slowly comes back to life. |
+| **Every Player Wins** | Game stalls, prize shelves and string lights. | **Prize plushies:** come alive and join the parade when the stall next to them blooms. |
+| **You, Twice** | Mirror corridors. | **Mirrors:** a reflected Ochre runs a mirrored copy of your path and greets creatures on the other side. |
+| **The Gallopers** | One big rotating level. | **Rotation:** the level turns while you run, so creatures move into and out of your path. |
+| **Mildly Haunted** | A dark ride with painted spooks. | **Darkness:** only the glow of your path lights up creatures. |
+| **Boss: Stuck at the Top** | The giant Ferris wheel. | Cheer the riders car by car as the wheel slowly comes back to life. |
 
-### Mondayville (town, swing band)
+### Monday, Ongoing (town, swing band)
 
 A gray little town where it has been Monday for three years and people forgot how to smile. The first world with humans.
 
 | Area | Setting | Local twist |
 |---|---|---|
-| **The Station** | Platforms, ticket barriers and commuters. | **Trains:** pass through on a timer and block tracks while they're in. |
-| **The Office** | Cubicles, coffee machines and plants. | **Lifts:** move Ochre between floors. Coffee gives a short speed boost. |
-| **The Laundrette** | Washing machines and sleepy cats. | **Spinning drums:** fling Ochre out in a new direction. |
-| **The Rooftops** | Gardens, pigeons and washing lines. | **Washing lines:** zip lines between buildings. |
-| **Boss: The Town Clock** | The clock tower stuck on Monday morning. | Cheer the clockkeeper and the gears start turning again. It's finally Tuesday. |
+| **Delays Expected** | Platforms, ticket barriers and commuters. | **Trains:** pass through on a timer and block tracks while they're in. |
+| **Per My Last Email** | Cubicles, coffee machines and plants. | **Lifts:** move Ochre between floors. Coffee gives a short speed boost. |
+| **Delicates** | Washing machines and sleepy cats. | **Spinning drums:** fling Ochre out in a new direction. |
+| **Strictly No Roof Access** | Gardens, pigeons and washing lines. | **Washing lines:** zip lines between buildings. |
+| **Boss: Five to Nine** | The clock tower stuck on Monday morning. | Cheer the clockkeeper and the gears start turning again. It's finally Tuesday. |
 
 ### Above the Hush (sky, choir)
 
@@ -281,10 +281,10 @@ A sky world over the gray cloud itself, with sheep-clouds and kites.
 
 | Area | Setting | Local twist |
 |---|---|---|
-| **The Kite Fields** | Grassy floating islands full of tangled kites. | **Updrafts:** carry Ochre between islands. |
-| **The Flock** | A herd of drifting sheep-clouds. | **Drifting platforms:** the level moves slowly while you plan. |
-| **The Weather Works** | A machine that makes the weather. | **Switches:** greetings flip rain, sun and wind, which changes the level mid-run. |
-| **The Edge of the Hush** | Where colour runs out. | Everything learned so far, mixed. |
+| **Where Kites Go** | Grassy floating islands full of tangled kites. | **Updrafts:** carry Ochre between islands. |
+| **Grazing Rights** | A herd of drifting sheep-clouds. | **Drifting platforms:** the level moves slowly while you plan. |
+| **Manual Override** | A machine that makes the weather. | **Switches:** greetings flip rain, sun and wind, which changes the level mid-run. |
+| **Last Known Colour** | Where colour runs out. | Everything learned so far, mixed. |
 | **Final boss: The Hush** | Inside the gray cloud. | The Hush turns out to be a very large, very lonely cloud. The final level is one long stroke with the entire parade behind you. You give it a hug. |
 
 ## Progression and meta
@@ -292,7 +292,7 @@ A sky world over the gray cloud itself, with sheep-clouds and kites.
 - **A long level map**, organised as worlds and areas (see Worlds). A new temperament, gift or area twist arrives every 3-5 levels.
 - **Companions:** one cheered creature per world can be invited to join permanently. Before a level, pick one companion to start the run in your parade. Each has a small ability (the owl shows Shy gaze cones from the start, the rabbit adds a little path length). Companions are earned, never sold.
 - **Ochre's wardrobe:** scarves, hats, backpacks and greeting styles, unlocked with stars. Purely cosmetic.
-- **Daily Picnic:** one hand-made level a day, with a leaderboard for path length and Bloom.
+- **The Daily Round:** one hand-made level a day, with a leaderboard for path length and Bloom.
 
 ## Monetisation
 
@@ -300,15 +300,15 @@ Standard cozy free-to-play.
 
 - **Lives = Hearts.** Five max, one lost per failed run, refilling over time. Out of hearts? Buy a refill, or wait.
 - **Asking friends for lives:** friends send you a heart in a little envelope with a sticker.
-- **Unlimited lives:** **"Warm Cocoa: 1 hour"**.
+- **Unlimited lives:** **"Bottomless Mug: 1 hour"**.
 - **Boosters:**
-  - **Do-over Daisy:** undo the last part of a committed path once.
-  - **Daydream:** plays a faint preview of the first five beats of the run, including timing.
-  - **Lantern:** before you commit, shows which creature your current plan would miss. The strongest booster, priced accordingly.
+  - **Second Draft:** undo the last part of a committed path once.
+  - **Dress Rehearsal:** plays a faint preview of the first five beats of the run, including timing.
+  - **Spoiler:** before you commit, shows which creature your current plan would miss. The strongest booster, priced accordingly.
   - **Extra Warmth:** start the level with 3 extra tiles.
   - **Sturdy Boots:** survive one bowl-over from a Bouncy creature.
 - **Near-miss continue:** "Catch your breath." When a run fails with one creature left gray, keep your path and get 3 extra tiles to finish it, for coins or an ad.
-- **Season pass:** **"Picnic Pass"**, with outfits, photo frames, parade hats and boosters on free and premium tracks.
+- **Season pass:** **"Parade Permit"**, with outfits, photo frames, parade hats and boosters on free and premium tracks.
 - **Rewarded ads:** a travelling puppet show in the village square, where the real ad plays on the puppet stage.
 
 ## Art direction
@@ -317,7 +317,7 @@ Standard cozy free-to-play.
 
 - **Materials:** soft matte clay with visible fingerprints and slightly uneven edges, so it feels handmade. Chunky, rounded shapes everywhere. No hard edges, no glossy plastic.
 - **Each level is a toy set** sitting on a table: a slab of clay tiles with the scene built on top, seen from a slightly tilted top-down camera with gentle tilt-shift blur at the edges. Readability comes first: the blur never touches the playing area.
-- **Characters** are small clay figures with big heads and simple faces, so they read well at phone size. Ochre is the only coloured figure at the start of every level.
+- **Characters** are small clay figures with big heads and simple faces, so they read well at phone size. Ochre is the only coloured figure at the start of every level, standing on the only coloured tile, so the premise ("colour follows Ochre") reads before the first move.
 - **The gray state is unpainted clay:** soft, pale gray clay, still pretty and tactile, just quiet. Creatures droop a little.
 - **Colour comes back like paint soaking into the clay:** fast at the creature, softening at the edges, with flowers and grass popping up out of the tiles. The spread should be the most satisfying effect in the game.
 - **Grid readability:** each tile is a separate, slightly raised clay square with a thin gap between tiles, so the grid reads without drawn lines. Grid lines only fade in while drawing. Obstacles (stumps, rocks, bushes) sit clearly on one tile each. Walkable tiles stay plain (smooth clay, maybe a tiny texture), and raised decoration is reserved for obstacles, creatures and gifts. In dense levels, decorated walkable tiles make it hard to see at a glance where you can walk (see `art/storyboard/18-tricky-forest-planning.png`).

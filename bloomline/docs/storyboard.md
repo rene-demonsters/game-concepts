@@ -68,7 +68,7 @@ After finishing the first area, its island on the map is in full colour. The nex
 
 ### 11. Out of hearts
 
-The cozy version of the out-of-lives screen: a blanket, a cocoa and a refill timer, with the "Warm Cocoa" unlimited-lives offer.
+The cozy version of the out-of-lives screen: a blanket, a mug of cocoa and a refill timer, with the "Bottomless Mug" unlimited-lives offer. (The mock-up still shows the old name, "Warm Cocoa".)
 
 ![Out of hearts](../art/storyboard/11-out-of-hearts.png)
 
@@ -76,41 +76,41 @@ The cozy version of the out-of-lives screen: a blanket, a cocoa and a refill tim
 
 Mid-run moments that show how the clay look and the grid carry across very different settings.
 
-### 12. The Silent Parliament: The Great Oak
+### 12. The Silent Parliament: The Upper House
 
 Spiralling floors inside a hollow tree, linked by ladders.
 
-![The Great Oak](../art/storyboard/12-world-forest-great-oak.png)
+![The Upper House](../art/storyboard/12-world-forest-great-oak.png)
 
-### 13. Port Nobody: The Fish Market
+### 13. Port Nobody: Yesterday's Catch
 
 A maze of market stalls, with a gull eyeing a gift on the path.
 
-![The Fish Market](../art/storyboard/13-world-harbour-fish-market.png)
+![Yesterday's Catch](../art/storyboard/13-world-harbour-fish-market.png)
 
-### 14. The Long Winter: The Frozen Lake
+### 14. Thaw Pending: Unsupervised Ice
 
 Ice tiles, fishing holes and frozen creatures waiting for a blanket.
 
-![The Frozen Lake](../art/storyboard/14-world-winter-frozen-lake.png)
+![Unsupervised Ice](../art/storyboard/14-world-winter-frozen-lake.png)
 
-### 15. The Stalled Funfair: The Carousel
+### 15. The Stalled Funfair: The Gallopers
 
 The whole level built on a carousel platform.
 
-![The Carousel](../art/storyboard/15-world-funfair-carousel.png)
+![The Gallopers](../art/storyboard/15-world-funfair-carousel.png)
 
-### 16. Mondayville: The Station
+### 16. Monday, Ongoing: Delays Expected
 
 Platforms, ticket barriers, a little train and sleepy commuters.
 
-![The Station](../art/storyboard/16-world-town-station.png)
+![Delays Expected](../art/storyboard/16-world-town-station.png)
 
-### 17. Above the Hush: The Kite Fields
+### 17. Above the Hush: Where Kites Go
 
 Floating grassy islands above the gray cloud, linked by tile bridges.
 
-![The Kite Fields](../art/storyboard/17-world-sky-kite-fields.png)
+![Where Kites Go](../art/storyboard/17-world-sky-kite-fields.png)
 
 ## What a hard level looks like
 
