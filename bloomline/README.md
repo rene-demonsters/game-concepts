@@ -15,7 +15,7 @@ Title availability has not been checked. Alternatives: *Colour Me In*, *Warm Pat
 - **Cozy all the way through.** Nobody gets hurt, not even on a failed run. Failing is gentle and funny: you trip into a leaf pile, or a puppy bowls you over and licks your face.
 - **Colour and music return together.** The gray world is quiet. Every creature you cheer brings back a patch of colour **and** an instrument. A perfect run finishes as a full-colour scene with a full song.
 - **The parade is the reward.** Creatures you reach follow you. The longer your run, the bigger and sillier the parade. That's the "everyone comes to her" feeling, earned by the player's planning.
-- **Still a real puzzle.** Cheering everyone is required, the tile budget is tight, and creature temperaments clash with each other and with the obstacles. Swapping punches for hugs must not make the game shallow. The challenge comes from planning, never from danger or reflexes.
+- **Cute look, adult difficulty.** The audience is grown-up match-3 players, not children. After a short tutorial stretch, levels are properly hard: cheering everyone is required, the tile budget is tight, and creature temperaments clash with each other and with the obstacles. The challenge comes from planning, never from danger or reflexes.
 
 ## Premise
 
@@ -143,6 +143,54 @@ A brute-force check of this layout confirms there's no shorter solution: every v
 
 The "aha" is that serving the most urgent creature first also lines Ochre up perfectly for the shy one.
 
+## Audience and difficulty
+
+**The art is cute, but the game is for adults.** The target player is the 25-55-year-old who plays a match-3 game every evening, likes being stuck on a level for a day, and will pay to get past a hard one. The look says cozy; the levels should say "this one took me three days."
+
+"Goose First" above is a tutorial level (around level 8). It shows the rules, not the intended difficulty.
+
+### Difficulty curve
+
+- **Levels 1-15: teaching.** Small grids (5×6), 2-4 creatures, one new rule at a time. Most are cleared first try. This is the part a child could finish.
+- **From level 15: normal levels.** 6×8 to 7×9 grids, 6-10 creatures, at least three temperaments, plus the area's twist. Target: 2-4 attempts on average.
+- **Tricky levels:** roughly every fifth level, and the last level of every area. Marked on the map with a purple leaf. Target: 5-10 attempts.
+- **Very Tricky levels:** boss levels and a few per world. Target: 10-20 attempts. These are the levels players talk about with friends.
+- **Sawtooth pacing:** after a Tricky level come one or two easier breather levels, so a session can always start with a quick win.
+
+Attempts per level and drop-off per level are tracked from the first soft launch, and tile budgets and countdowns are tuned per level to hit these targets.
+
+### Where the difficulty comes from
+
+Hard, but always fair: every level is solvable with the information on screen, and no reflexes are ever needed.
+
+1. **Many creatures, one tight budget.** With 8-10 creatures, the order is a real combinatorial problem. Normal levels leave 1-2 spare tiles; Tricky levels leave none.
+2. **Interlocking rules.** Hard levels stack three or four rules on the same few tiles. Example: the owl's gaze line runs right past the sleeping bear, so the only approach the owl accepts needs a turn next to the bear, unless you pick up the flute first, which is on the other side of the pond.
+3. **Timing.** Countdowns, Bouncy creatures, gates and drifting fog all run on the beat. A route that's right on the map can still be wrong in time.
+4. **Order dependencies.** Some creatures can only be reached after others: the bear has to be in the parade before the log can move, and the creature next to the fog has to bloom before the tiles behind it open up.
+5. **Decoys.** A gift that looks useful but costs two tiles too many. An obvious route that ends one tile short.
+6. **Mixed goals** (see Level goals).
+
+Every level runs through a solver during design. It checks that the level can be solved, counts the solutions and finds the shortest path. It also counts **near-solutions**: plausible routes that cheer everyone but one creature. Hard levels have lots of near-solutions and very few real ones. That's what makes a fail feel like "so close" instead of "impossible."
+
+### Level goals
+
+Like match-3 games, levels mix goals to stay fresh:
+
+- **Cheer everyone:** the default.
+- **Family line:** a mother duck and her ducklings must join the parade in order, mother first. Part of the route order is fixed.
+- **Deliveries:** pick up gifts and bring each one to a specific creature, such as a letter to the owl who's waiting for post.
+- **Bloom target:** colour a set percentage of the level, which needs efficient use of paint pods.
+- **Hush tide:** the fog spreads one tile every few beats. Finish before it swallows the creatures.
+- **Two travellers** (late game): Ochre and a friend each draw a path. Both run at the same time, and they can't cross each other.
+
+### Keeping lives meaningful
+
+The risk with a puzzle that has fixed solutions: once you know the answer, you never fail again, and answers can be looked up online. In match-3 games, luck keeps lives and boosters valuable. Bloomline needs other ways to do that.
+
+- **Planning isn't knowing.** The rules are visible, but timing consequences only show during the run. Most fails come from a plan that looked right.
+- **Variants on hard levels.** Each Tricky and Very Tricky level has 3-5 hand-checked variants: different countdowns, a moved stump, a creature facing another way. The idea of the level stays the same. The variant stays fixed while you keep retrying, and changes when you leave the level or run out of hearts. That makes copying a solution from a video unreliable without ever changing the puzzle mid-attempt.
+- **Near-miss continues.** When a run fails with just one creature left gray, the game offers a continue: keep your path and get 3 extra tiles to finish it. This is Bloomline's version of "+5 moves", the biggest earner in match-3 games.
+
 ## The world gets brighter as you play
 
 Colour comes back on three scales:
@@ -255,9 +303,11 @@ Standard cozy free-to-play.
 - **Unlimited lives:** **"Warm Cocoa: 1 hour"**.
 - **Boosters:**
   - **Do-over Daisy:** undo the last part of a committed path once.
-  - **Daydream:** shows a faint preview of the first second of the run.
+  - **Daydream:** plays a faint preview of the first five beats of the run, including timing.
+  - **Lantern:** before you commit, shows which creature your current plan would miss. The strongest booster, priced accordingly.
+  - **Extra Warmth:** start the level with 3 extra tiles.
   - **Sturdy Boots:** survive one bowl-over from a Bouncy creature.
-- **Continue:** "Catch your breath" for +20% path length.
+- **Near-miss continue:** "Catch your breath." When a run fails with one creature left gray, keep your path and get 3 extra tiles to finish it, for coins or an ad.
 - **Season pass:** **"Picnic Pass"**, with outfits, photo frames, parade hats and boosters on free and premium tracks.
 - **Rewarded ads:** a travelling puppet show in the village square, where the real ad plays on the puppet stage.
 
@@ -270,7 +320,7 @@ Standard cozy free-to-play.
 - **Characters** are small clay figures with big heads and simple faces, so they read well at phone size. Ochre is the only coloured figure at the start of every level.
 - **The gray state is unpainted clay:** soft, pale gray clay, still pretty and tactile, just quiet. Creatures droop a little.
 - **Colour comes back like paint soaking into the clay:** fast at the creature, softening at the edges, with flowers and grass popping up out of the tiles. The spread should be the most satisfying effect in the game.
-- **Grid readability:** each tile is a separate, slightly raised clay square with a thin gap between tiles, so the grid reads without drawn lines. Grid lines only fade in while drawing. Obstacles (stumps, rocks, bushes) sit clearly on one tile each.
+- **Grid readability:** each tile is a separate, slightly raised clay square with a thin gap between tiles, so the grid reads without drawn lines. Grid lines only fade in while drawing. Obstacles (stumps, rocks, bushes) sit clearly on one tile each. Walkable tiles stay plain (smooth clay, maybe a tiny texture), and raised decoration is reserved for obstacles, creatures and gifts. In dense levels, decorated walkable tiles make it hard to see at a glance where you can walk (see `art/storyboard/18-tricky-forest-planning.png`).
 - **Rule markers** are clay props too: the owl's gaze line is a row of small clay dots, the goose's countdown is a little clay sign, the bear's zZ floats above it, the hedgehog's soft side is a fluffy patch.
 - **The drawn path** is a glowing warm line that snaps between tile centres and leaves a trail of small clay flowers behind Ochre.
 - **Pastel palette** in colour, with each area blooming into its own dominant colour (see Worlds), so finished areas look clearly different on the map.
@@ -285,6 +335,7 @@ Standard cozy free-to-play.
 ## Tone and ratings
 
 - Aiming for a 4+ / PEGI 3 rating. No violence, no peril beyond comic tumbles.
+- The rating is for everyone, but the writing is for adults: level names, creature notes and UI copy should be dry and witty, like a good picture book that's secretly written for the parents.
 - Affection is friendly and family-appropriate: hugs, boops, high-fives, forehead and cheek kisses.
 - Sadness is gentle and specific ("the bear's friend moved away"), never heavy. Every creature ends up happy.
 
@@ -299,6 +350,8 @@ Bloomline started as Red Line with a different meaning, and most creature rules 
 - How big can the grid get on a phone before tiles are too small to drag accurately? Probably 8 tiles wide at most in portrait.
 - The grid can't feel like a spreadsheet. The art test has to prove that tiles can read clearly while still looking like a natural scene.
 - How long can the parade get before it clutters a small phone screen? Maybe followers shrink or only the last 10 are shown.
-- Do parade abilities add enough depth to carry 100+ levels, or does the game need another layer (weather, day and night)?
+- Do parade abilities and level goals add enough depth to carry 100+ levels at adult difficulty? A level-design sprint of 30 levels with the solver should answer this before anything else is built.
+- Do level variants feel fair, or do players feel cheated when a hard level changes after they leave it? Needs playtesting.
+- Are deterministic puzzles too easy to beat with online walkthroughs to support a lives-based business model? Compare retention and spending against a match-3 benchmark in soft launch.
 - The colour-spread effect is the selling point. It needs an early technical art test to make sure it looks this good on mid-range phones.
 - Name and protagonist design: Ochre needs to be original, gender-neutral and instantly lovable.

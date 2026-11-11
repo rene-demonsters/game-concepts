@@ -1,6 +1,6 @@
 # Bloomline storyboard
 
-A mock-up walkthrough of a first play session in the chosen clay toy diorama style, followed by one gameplay mock-up per world. Frames 03-09 use the solver-checked example level "Goose First" from the [README](../README.md#worked-example-goose-first).
+A mock-up walkthrough of a first play session in the chosen clay toy diorama style, followed by one gameplay mock-up per world. Frames 03-09 use the solver-checked example level "Goose First" from the [README](../README.md#worked-example-goose-first). That's a tutorial level, so it looks much easier than a typical level; see [Audience and difficulty](../README.md#audience-and-difficulty) for the intended challenge.
 
 All images were generated with Codex and are concept mock-ups, not final art. Small layout inaccuracies are noted where they matter.
 
@@ -111,3 +111,27 @@ Platforms, ticket barriers, a little train and sleepy commuters.
 Floating grassy islands above the gray cloud, linked by tile bridges.
 
 ![The Kite Fields](../art/storyboard/17-world-sky-kite-fields.png)
+
+## What a hard level looks like
+
+The frames above use a tutorial level. These show the intended difficulty for adult players (see [Audience and difficulty](../README.md#audience-and-difficulty)). They're visual mock-ups, not solver-checked levels.
+
+### 18. Tricky level: forest
+
+A 7×9 level with nine creatures, a duck family that has to join in order (1, 2, 3), a goose on a countdown of 6, a bouncy puppy, fog, a log, a gate and a pond, all on a 24-tile budget.
+
+Lesson for the art direction: every free tile here has a raised plant on it, which makes it hard to see where you can walk. Walkable tiles should stay plain.
+
+![Tricky forest level](../art/storyboard/18-tricky-forest-planning.png)
+
+### 19. Tricky level: harbour
+
+The pier, with gaps between planks, rocking boats, crab tracks, a gull guarding a gift and fog.
+
+![Tricky harbour level](../art/storyboard/19-tricky-harbour-planning.png)
+
+### 20. So close: the near-miss continue
+
+The run ended with one creature still gray just past the end of the path. Keep the path and get 3 extra tiles for coins or an ad, or give up and lose a heart. (The obstacle layout differs a little from frame 18, and the path doesn't exactly match the counter.)
+
+![Near-miss continue](../art/storyboard/20-near-miss-continue.png)
