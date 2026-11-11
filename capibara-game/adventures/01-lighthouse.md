@@ -1,5 +1,7 @@
 # The Lighthouse That Went Dark
 
+> Earlier short treatment. The [expanded title design](../the-lighthouse-that-went-dark/README.md) is the source of truth for the full adventure, including scene concepts, puzzle variants, and asset briefs.
+
 Story and puzzle treatment. All character and place names remain undecided.
 
 ## Story

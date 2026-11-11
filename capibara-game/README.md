@@ -56,7 +56,7 @@ Each linked treatment includes a complete story and ending, locations, a connect
 
 ### The Lighthouse That Went Dark
 
-[Read the story and puzzle treatment](adventures/01-lighthouse.md).
+[Read the expanded story, scenes, puzzles, variants, and asset briefs](the-lighthouse-that-went-dark/README.md).
 
 On the night of the floating lantern festival, the lighthouse stops working. Strange lights appear near a shipwreck on a neighboring island, and everyone suspects a ghost ship. The captain and her first mate sail between the harbor, lighthouse, and wreck to discover what is happening.
 
