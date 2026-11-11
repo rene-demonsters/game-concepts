@@ -1,0 +1,60 @@
+:root {
+  --bg: #14161b; --panel: #1c1f27; --line: #2c303b; --text: #e6e8ee; --dim: #9aa0ae;
+  --no: #2166ac; --yes: #d95f02; --neutral: #cfcfcf; --bot: #b36bff; --good: #5ec27b;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+  font: 14px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; overscroll-behavior: none; }
+#app { height: 100dvh; max-width: 520px; margin: 0 auto; display: flex; flex-direction: column;
+  padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom); position: relative; touch-action: manipulation; }
+#top { padding: 8px 10px 4px; background: var(--panel); border-bottom: 1px solid var(--line); }
+#bars { width: 100%; height: 58px; display: block; }
+#topline { display: flex; align-items: center; gap: 8px; margin-top: 4px; font-size: 12px; color: var(--dim); }
+#topline .spacer { flex: 1; }
+#gapLabel { color: var(--text); font-weight: 600; }
+#gapLabel.hot { color: var(--yes); }
+.chip { background: transparent; color: var(--dim); border: 1px solid var(--line); border-radius: 999px;
+  padding: 4px 10px; font: inherit; font-size: 12px; min-height: 30px; }
+.chip[aria-pressed="true"], .chip.on { color: var(--text); border-color: var(--bot); background: rgba(179,107,255,.15); }
+#stage { flex: 1; min-height: 0; position: relative; }
+#town { width: 100%; height: 100%; display: block; }
+#inspect { position: absolute; left: 8px; right: 8px; bottom: 8px; background: rgba(28,31,39,.96);
+  border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 12.5px; }
+#inspect h3 { margin: 0 0 4px; font-size: 14px; }
+#inspect .row { display: flex; justify-content: space-between; gap: 8px; }
+#inspect .why { color: var(--dim); margin-top: 4px; }
+#inspect .close { position: absolute; top: 4px; right: 6px; background: none; border: 0; color: var(--dim); font-size: 18px; padding: 6px 8px; }
+#sheet { background: var(--panel); border-top: 1px solid var(--line); padding: 8px 10px 10px; max-height: 44vh; overflow-y: auto; }
+#stats { display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; align-items: center; font-size: 12px; color: var(--dim); }
+.meter { height: 8px; border-radius: 4px; background: #2a2e39; overflow: hidden; }
+.meter > i { display: block; height: 100%; background: var(--good); transition: width .3s; }
+.meter.heat > i { background: var(--bot); }
+.meter.danger > i { background: var(--yes); }
+.row-btns { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+button.tool, button.go, button.opt { border-radius: 8px; border: 1px solid var(--line); background: #232733; color: var(--text);
+  padding: 8px 10px; font: inherit; min-height: 40px; }
+button.tool small { display: block; color: var(--dim); font-size: 11px; }
+button.go { background: var(--yes); border-color: var(--yes); color: #fff; font-weight: 700; flex: 1; }
+button.go:disabled, button.tool:disabled { opacity: .4; }
+.chip.target { min-height: 36px; }
+.queue { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; min-height: 26px; }
+.queue .q { background: #232733; border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; font-size: 12px; }
+#receipts { margin-top: 8px; font-size: 12.5px; }
+#receipts h4 { margin: 8px 0 2px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--dim); }
+#receipts p { margin: 2px 0; }
+#receipts p.snark { color: var(--yes); font-style: italic; }
+#overlay { position: absolute; inset: 0; background: rgba(10,11,14,.92); padding: 18px 16px; overflow-y: auto; z-index: 5; }
+#overlay[hidden], #inspect[hidden] { display: none; }
+#overlay h1 { margin: 6px 0 2px; font-size: 24px; }
+#overlay h2 { margin: 14px 0 4px; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--dim); }
+#overlay p { margin: 6px 0; }
+#overlay .big { font-size: 34px; font-weight: 800; margin: 4px 0; }
+#overlay .big.pass { color: var(--yes); } #overlay .big.fail { color: var(--no); }
+#overlay .opts { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.hist { display: flex; align-items: flex-end; gap: 2px; height: 70px; margin: 8px 0 2px; position: relative; }
+.hist i { flex: 1; background: #3a4050; min-height: 2px; }
+.hist i.you { background: var(--yes); }
+.hist i.half { border-left: 2px solid var(--text); }
+.histlabels { display: flex; justify-content: space-between; color: var(--dim); font-size: 11px; }
+.fate { border-left: 3px solid var(--line); padding-left: 8px; margin: 6px 0; }
+.dim { color: var(--dim); }

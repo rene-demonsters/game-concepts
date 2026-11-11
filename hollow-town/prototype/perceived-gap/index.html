@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#14161b">
+  <title>Hollow Town: Prototype 0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="top">
+      <canvas id="bars"></canvas>
+      <div id="topline">
+        <span id="dayLabel"></span>
+        <span id="gapLabel"></span>
+        <span class="spacer"></span>
+        <button id="xray" class="chip" aria-pressed="false">X-ray</button>
+        <button id="speed" class="chip">1x</button>
+      </div>
+    </header>
+    <main id="stage">
+      <canvas id="town"></canvas>
+      <div id="inspect" hidden></div>
+    </main>
+    <section id="sheet">
+      <div id="stats"></div>
+      <div id="act"></div>
+      <div id="receipts"></div>
+    </section>
+    <div id="overlay" hidden></div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

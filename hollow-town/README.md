@@ -159,6 +159,8 @@ Canvas 2D (not PixiJS) for the prototype, a pure TypeScript sim core with no DOM
 
 ## Prototype 0
 
+A first quick version is built in [`prototype/perceived-gap/`](prototype/perceived-gap/) (plain JS, no build step; see its README for how to run it, what is in, and known issues).
+
 Goal: answer one question: **is watching perceived consensus diverge from reality compelling, with modest, honest effect sizes?**
 
 In scope:
