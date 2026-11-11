@@ -44,17 +44,74 @@ The shrimp's movement should follow a consistent storybook rule: he can travel a
 
 A familiar home harbor anchors a small archipelago. Recurring residents and locations give children something to recognize across adventures, while each story introduces a different island or corner of the world.
 
-The ship connects locations and acts as a shared home. A simple illustrated map supports travel once routes have been discovered.
-
-Possible adventures include:
-
-- **The lighthouse mystery:** the lighthouse goes dark before a lantern festival, and strange lights appear near a wreck.
-- **The ghost ship:** mysterious sounds and moving objects frighten the harbor; investigating reveals someone who needs help.
-- **The disappearing island:** conflicting charts and changing tides complicate a delivery to an apparently missing island.
-- **The mixed-up treasure:** a chest of ordinary objects leads to a mystery about their owners and a former captain's travels.
-- **The boat race:** misplaced equipment and damaged course markers threaten the annual race; helping everyone prepare forms the main adventure.
+The ship is just big enough for the crew and acts as their shared home. Each adventure begins in the harbor with a rumor, a visitor, or something unusual washed ashore. A simple illustrated map supports travel once routes have been discovered.
 
 Each adventure has a complete, satisfying ending. The same duo can carry different story genres without changing their core personalities.
+
+## Adventure concepts
+
+These are possible stories for the series. Titles are provisional; character, ship, and location names remain undecided.
+
+### The Lighthouse That Went Dark
+
+On the night of the floating lantern festival, the lighthouse stops working. Strange lights appear near a shipwreck on a neighboring island, and everyone suspects a ghost ship. The captain and her first mate sail between the harbor, lighthouse, and wreck to discover what is happening.
+
+Puzzle ideas:
+
+- Repair a foghorn.
+- Mix colored signal lights.
+- Follow buoy patterns to navigate a route.
+- Help a frightened creature out of the lighthouse machinery.
+
+### The Treasure Nobody Wanted
+
+The duo discovers a chest full of apparently useless objects: a bent spoon, a cracked bell, and one enormous button. An old map suggests they belong to a legendary pirate's treasure, but every islander recognizes something different in the collection. Each returned object brings the crew closer to finding what the old captain actually treasured.
+
+Puzzle ideas:
+
+- Trace the objects' owners through conversations and visual clues.
+- Repair keepsakes before returning them.
+- Reveal hidden map markings.
+- Connect the islanders' memories to reconstruct the old captain's travels.
+
+### The Ghost of the Abandoned Fort
+
+Someone—or something—is ringing an abandoned fort's bell and leaving glowing footprints on the beach. The harbor's bravest pirate refuses to investigate without his lucky slippers. The duo explores the fort to discover who needs help behind the spooky performance.
+
+Puzzle ideas:
+
+- Make a harmless glow mixture.
+- Find a route through the fort.
+- Reconstruct strange noises to understand their source.
+- Find the pirate's lucky slippers so he will help with the investigation.
+
+### The Great Backwards Boat Race
+
+The harbor's annual race is about to begin, but boats keep turning in circles, course markers have drifted away, and the prize has been delivered to the wrong island. A boastful rival captain has a spectacularly impractical ship. The main adventure is about getting everyone ready; the race itself can be a short, forgiving finale.
+
+Puzzle ideas:
+
+- Assemble a sail.
+- Balance cargo so a boat travels correctly.
+- Interpret wind clues and recover course markers.
+- Repair the starting mechanism and retrieve the misplaced prize.
+
+### The Island That Disappeared
+
+A baker asks the crew to deliver a birthday cake to an island that seems to have vanished. Its residents have left clues around the surrounding waters, but the old charts disagree about where it should be. The investigation reveals a passage accessible at low tide.
+
+Puzzle ideas:
+
+- Compare landmarks with the old charts.
+- Consult tide charts.
+- Deliver messages between islands to piece together a route.
+- Discover and use the passage revealed at low tide.
+
+The player controls when the tide changes through an explicit travel or wait action. There is no real-time waiting, deadline, or risk of missing the passage.
+
+### Replayability across stories
+
+Each story can vary which route needs repairing, what a character requests, or where a clue is found while keeping its central mystery intact. A child can remember the characters and story without remembering every solution. All variations follow the solvability rules below.
 
 ## Core gameplay
 
