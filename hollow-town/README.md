@@ -155,7 +155,7 @@ Details in `docs/prototype-0.md`. Highlights:
 
 ## Tech
 
-Canvas 2D (not PixiJS) for the prototype, a pure TypeScript sim core with no DOM dependency, a seeded RNG with per-subsystem streams, a web-worker pool for ghost runs, Vite and Vitest, and a headless balance harness that runs 1000 seeds. Ships as an HTML5 build for itch.io and a web host. Full plan in `docs/prototype-0.md`.
+Canvas 2D (not PixiJS) for the prototype, a pure TypeScript sim core with no DOM dependency, a seeded RNG with per-subsystem streams, a web-worker pool for ghost runs, Vite and Vitest, and a headless balance harness that runs 1000 seeds. Playtest and demo builds ship as HTML5 on a web host; the release is a paid full game (platform to be decided). Full plan in `docs/prototype-0.md`.
 
 ## Prototype 0
 
@@ -180,12 +180,12 @@ The order of attack is a headless balance harness and a fake-event renderer spik
 4. Faceless and fake video, liar's dividend (campaign 4)
 5. Field Guide, then campaign 5
 
-## Open questions
+## Decisions on tensions from the studio reviews
 
-Genuine tensions between the studio reviews. Proposed resolution in italics; to confirm.
+Resolved. Revisit only if playtests say otherwise.
 
-1. **Field Guide: fun vs. leak.** The design director wants a "how many tells did you leave?" score, par and leaderboard so players replay to be sneakier. The ethics advisor warns that rewarding hiding tells risks a tuned playbook. *Proposal: score recognition of tells (for the defender and the detective mode), not stealth optimization; no public stealth leaderboard.*
-2. **Field Guide: skippable or not.** The design director says a mandatory Field Guide is "eat your vegetables"; the research says the awareness payoff lives there. *Proposal: a short mandatory part (hero fates and what still worked) plus an opt-in detective mode.*
-3. **Educator mode vs. deeper systems.** The ethics advisor wants an educator mode that hides the optimization loop; our audience choice is deeper systems. *Proposal: build the exposed-sim version first; educator mode is a later skin.*
-4. **When to introduce Heat and Credibility.** The systems designer treats them as core resources; the design director wants them deferred to around campaign 1 day 4. *Proposal: both; present them late in onboarding but model them from day 1.*
-5. **Reach: free web vs. premium depth.** Research suggests a free web build for reach; our audience is game-literate and wants depth. *Proposal: free web build of the early campaigns, paid or full version later, undecided.*
+1. **Field Guide: fun vs. leak.** Score recognition of tells (in the defender epilogue and detective mode), not stealth optimization. No public stealth leaderboard.
+2. **Field Guide: skippable or not.** A short mandatory part (hero fates and what still worked) plus an opt-in detective mode for the deep dive.
+3. **Educator mode vs. deeper systems.** Build the exposed-sim version first; educator mode is a later skin.
+4. **When to introduce Heat and Credibility.** Model both from day 1, but present them late in onboarding, one at a time.
+5. **Business model.** A **paid, full game**. There is no free tier. Platform (Steam, itch.io or both) is still to be decided. Web builds are used only for playtests and demos.

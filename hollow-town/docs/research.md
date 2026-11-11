@@ -40,5 +40,5 @@ Findings from the studio researcher pass (web search, Nov 2026). Sales and playe
 1. **Measure discernment, not suspicion.** If we claim educational value, the Field Guide should train recognition of specific tells, not general distrust. Test with true and false items.
 2. **Keep the tell pairing**, and have the end screen show how much of the player's success ran through ingroup trust, where inoculation evidence is weakest.
 3. **The aftermath is the differentiator.** Westport was criticized for lacking consequence, so hero-citizen fates and ghost distributions must be in Prototype 0 or very early.
-4. **Expect a small commercial niche.** Budget for a free web build for reach, and optionally a paid depth edition. Do not assume Steam alone will carry it.
+4. **Expect a small commercial niche.** The research suggested a free web build for reach. **Decision: the game is a paid full game with no free tier**, so budget accordingly (modest sales expectations, a web demo for playtests, wishlists and press, and a clear differentiator from the free Cambridge games).
 5. **Replayability and durability need a plan.** Seeded, varied towns address replay; short repeat exposures are more plausible than one session for any lasting effect.

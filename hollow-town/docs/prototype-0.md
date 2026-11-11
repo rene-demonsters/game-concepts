@@ -45,7 +45,7 @@ Question Prototype 0 must answer: **is watching perceived consensus diverge from
 - **Save/replay:** store `{version, seed, townConfig, actions: [{day, tool, target, params}]}`. Determinism gives replays and ghost comparison for free. Add a per-day state hash for desync detection and a `simVersion` that invalidates old replays. Avoid cross-engine float hazards (`Math.sin` etc. in sim logic) or accept same-engine determinism. Autosave to localStorage at the end of each Act phase; optional share-by-URL.
 - **Performance budget:** 60fps at 4x on a mid phone. Sim step under 2ms per tick at 80 agents, draw under 6ms, no allocations in the hot loop (pooled pulses and bubbles), bundle under 300KB gzipped, cold start under 2s.
 - **Mobile/touch:** Pointer Events only, 44px minimum hit targets (snap-to-nearest-node tap with a magnifier ring), tap-to-pin inspect, landscape-first with the right rail as a bottom sheet in portrait.
-- **Distribution:** itch.io HTML5 upload (`base: './'`) plus the same build on Cloudflare Pages or GitHub Pages. No SharedArrayBuffer (itch doesn't provide COOP/COEP headers), so use message passing.
+- **Distribution (playtests and demos only; the release is a paid full game):** itch.io HTML5 upload (`base: './'`) plus the same build on Cloudflare Pages or GitHub Pages. No SharedArrayBuffer (itch doesn't provide COOP/COEP headers), so use message passing.
 
 ## Build plan (about 4-5 weeks for one person)
 
